@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio d'Abdelkrim Messaoudene — Étudiant BUT R&T Cybersécurité, IUT Villetaneuse. Réseaux, sécurité, pentest." />
+  <meta name="author" content="Abdelkrim Messaoudene" />
+
+  <title>Abdelkrim Messaoudene — Réseaux & Cybersécurité</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <a href="#hero" class="nav-logo">Abdelkrim <span>M.</span></a>
+
+    <ul class="nav-center" id="navLinks">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#formation">Parcours</a></li>
+      <li><a href="#stage">Stage</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="assets/docs/CV-Abdelkrim-Messaoudene.pdf"
+         class="btn-nav"
+         target="_blank"
+         title="Télécharger le CV"
+         >
+        <i class="fa fa-download fa-xs"></i> CV
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════
+         HERO
+    ═══════════════════════════════════ -->
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Texte gauche -->
+          <div class="hero-left">
+            <div class="hero-available">
+              <span class="dot"></span>
+              Disponible — Stage · Alternance
+            </div>
+
+            <h1 class="hero-name">
+              Abdelkrim<br>
+              <span class="italic">Messaoudene</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Étudiant <strong>BUT Réseaux & Télécommunications</strong> — Parcours Cybersécurité
+            </p>
+
+            <p class="hero-desc">
+              Je conçois des infrastructures réseau sécurisées, mène des audits de vulnérabilités et déploie des solutions adaptées aux environnements professionnels. Actuellement en stage au Laboratoire d'Informatique de Paris-Nord.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">
+                <i class="fa fa-folder-open fa-xs"></i> Voir mes projets
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <i class="fa fa-envelope fa-xs"></i> Me contacter
+              </a>
+            </div>
+
+            <div class="hero-metrics">
+              <div>
+                <div class="metric-num">4+</div>
+                <div class="metric-label">Projets techniques</div>
+              </div>
+              <div>
+                <div class="metric-num">2+</div>
+                <div class="metric-label">Ans de formation</div>
+              </div>
+              <div>
+                <div class="metric-num">3</div>
+                <div class="metric-label">Langues</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte droite -->
+          <div class="hero-right">
+            <div class="hero-card">
+              <div class="hero-card-top">
+                <div class="avatar">
+                  <img src="assets/img/photo-profil.jpg" alt="Abdelkrim Messaoudene" />
+                </div>
+                <div class="c-name">Abdelkrim Messaoudene</div>
+                <div class="c-title">Réseaux & Cybersécurité · BUT R&T</div>
+              </div>
+
+              <div class="hero-card-body">
+                <div class="card-chips">
+                  <span class="chip chip-blue">pfSense</span>
+                  <span class="chip chip-teal">Pentest</span>
+                  <span class="chip chip-slate">VLAN / ACL</span>
+                  <span class="chip chip-blue">Graylog</span>
+                  <span class="chip chip-teal">Linux</span>
+                  <span class="chip chip-amber">Proxmox</span>
+                  <span class="chip chip-slate">Wireshark</span>
+                  <span class="chip chip-blue">RADIUS</span>
+                </div>
+
+                <div class="stage-callout">
+                  <div class="stage-callout-label">
+                    <i class="fa fa-circle-dot fa-xs"></i> Stage en cours
+                  </div>
+                  <div class="stage-callout-text">
+                    Institut Galilée – LIPN, Villetaneuse<br>
+                    Tuteur : Arnaud Lefevre<br>
+                    <span style="color:var(--teal);font-weight:500;">20 avril → 26 juin 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ═══════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════ -->
+    <section id="about" aria-label="À propos">
+      <div class="container">
+        <div class="about-layout fade-up">
+
+          <!-- Description -->
+          <div>
+            <div class="eyebrow">Qui suis-je</div>
+            <h2 class="title">À <em>propos</em> de moi</h2>
+
+            <div class="about-text">
+              <p>
+                Je suis <strong>Abdelkrim Messaoudene</strong>, étudiant en 2ème année de BUT Réseaux & Télécommunications à l'IUT de Villetaneuse (Université Sorbonne Paris Nord), spécialisé dans le parcours <strong>Cybersécurité</strong>.
+              </p>
+              <p>
+                Élu <strong>délégué de département</strong>, j'ai développé des compétences en communication, organisation et représentation d'équipe tout au long de ma formation. Ce rôle m'a appris à être un intermédiaire efficace entre étudiants et enseignants, tout en gérant des responsabilités collectives.
+              </p>
+              <p>
+                Sur le plan technique, je maîtrise la conception de <strong>réseaux sécurisés</strong> (VLAN, DMZ, pare-feu, routage), la supervision d'infrastructures, et les techniques de <strong>cybersécurité offensive et défensive</strong> (pentest, audit, segmentation). Mon stage actuel au LIPN me permet d'approfondir ces compétences dans un cadre de recherche exigeant.
+              </p>
+            </div>
+
+            <div class="about-softskills">
+              <div class="soft-pill"><i class="fa fa-users"></i> Travail en équipe</div>
+              <div class="soft-pill"><i class="fa fa-bolt"></i> Apprentissage rapide</div>
+              <div class="soft-pill"><i class="fa fa-comments"></i> Communication claire</div>
+              <div class="soft-pill"><i class="fa fa-star"></i> Délégué de dept. R&T</div>
+            </div>
+          </div>
+
+          <!-- Infos & liens -->
+          <div>
+            <div class="info-stack">
+              <div class="info-row">
+                <i class="fa fa-location-dot"></i>
+                <span>Argenteuil (95100), Île-de-France</span>
+              </div>
+              <div class="info-row">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+33666336642">+33 6 66 33 66 42</a>
+              </div>
+              <div class="info-row">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:abdelkrim.messaoudene09@gmail.com">abdelkrim.messaoudene09@gmail.com</a>
+              </div>
+              <div class="info-row">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/abdelkrim-messaoudene" target="_blank" rel="noopener">
+                  linkedin.com/in/abdelkrim-messaoudene
+                </a>
+              </div>
+              <div class="info-row">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/krimm-cyber" target="_blank" rel="noopener">
+                  github.com/krimm-cyber
+                </a>
+              </div>
+            </div>
+
+            <!-- Langues -->
+            <div class="lang-row">
+              <div class="lang-item">
+                <div class="lang-flag">🇫🇷</div>
+                <div class="lang-name-s">Français</div>
+                <div class="lang-lvl c1">Courant</div>
+              </div>
+              <div class="lang-item">
+                <div class="lang-flag">🇬🇧</div>
+                <div class="lang-name-s">Anglais</div>
+                <div class="lang-lvl">Intermédiaire</div>
+              </div>
+              <div class="lang-item">
+                <div class="lang-flag">🇸🇦</div>
+                <div class="lang-name-s">Arabe</div>
+                <div class="lang-lvl">Intermédiaire</div>
+              </div>
+            </div>
+            <a href="assets/docs/CV-Abdelkrim-Messaoudene.pdf"
+               class="cv-box"
+               target="_blank"
+               >
+              <i class="fa fa-file-pdf cv-box-icon"></i>
+              <div>
+                <span class="cv-box-label">Télécharger mon CV</span>
+                <span class="cv-box-sub">CV-Abdelkrim-Messaoudene.pdf · À jour 2026</span>
+              </div>
+              <i class="fa fa-arrow-down" style="margin-left:auto;color:var(--indigo);font-size:0.8rem;"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ═══════════════════════════════════
+         COMPÉTENCES
+    ═══════════════════════════════════ -->
+    <section id="skills" aria-label="Compétences techniques">
+      <div class="container">
+        <div class="eyebrow">Expertise</div>
+        <h2 class="title">Compétences <em>techniques</em></h2>
+        <p class="lead">Un stack complet couvrant réseaux, cybersécurité, systèmes et développement, forgé lors de projets académiques et professionnels.</p>
+
+        <div class="skills-grid">
+
+          <div class="skill-card fade-up">
+            <div class="skill-icon icon-blue"><i class="fa fa-network-wired"></i></div>
+            <h3>Réseaux</h3>
+            <div class="tag-list">
+              <span class="tag">VLAN</span>
+              <span class="tag">ACL</span>
+              <span class="tag">DMZ</span>
+              <span class="tag">Routage statique</span>
+              <span class="tag">RIP</span>
+              <span class="tag">DHCP</span>
+              <span class="tag">DNS</span>
+              <span class="tag">iptables</span>
+              <span class="tag">Supervision réseau</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-icon icon-teal"><i class="fa fa-shield-halved"></i></div>
+            <h3>Cybersécurité</h3>
+            <div class="tag-list">
+              <span class="tag">pfSense</span>
+              <span class="tag">Stormshield</span>
+              <span class="tag">Pare-feu</span>
+              <span class="tag">DHCP Snooping</span>
+              <span class="tag">RADIUS / 802.1X</span>
+              <span class="tag">Segmentation LAN</span>
+              <span class="tag">Graylog</span>
+              <span class="tag">SIEM</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-icon icon-amber"><i class="fa fa-bug"></i></div>
+            <h3>Pentest & Audit</h3>
+            <div class="tag-list">
+              <span class="tag">nmap</span>
+              <span class="tag">Wireshark</span>
+              <span class="tag">TryHackMe</span>
+              <span class="tag">RootMe</span>
+              <span class="tag">Reconnaissance</span>
+              <span class="tag">Exploitation CVE</span>
+              <span class="tag">Post-exploitation</span>
+              <span class="tag">Rapport d'audit</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-icon icon-slate"><i class="fa fa-server"></i></div>
+            <h3>Systèmes</h3>
+            <div class="tag-list">
+              <span class="tag">Linux</span>
+              <span class="tag">Windows Server</span>
+              <span class="tag">Proxmox</span>
+              <span class="tag">VirtualBox</span>
+              <span class="tag">GNS3</span>
+              <span class="tag">Marionnet</span>
+              <span class="tag">GLPI</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-icon icon-blue"><i class="fa fa-code"></i></div>
+            <h3>Développement & Scripting</h3>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Bash</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Git</span>
+              <span class="tag">Automatisation</span>
+              <span class="tag">Scripting réseau</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-icon icon-teal"><i class="fa fa-layer-group"></i></div>
+            <h3>Virtualisation & Infra</h3>
+            <div class="tag-list">
+              <span class="tag">Proxmox</span>
+              <span class="tag">Haute disponibilité</span>
+              <span class="tag">CARP / HA</span>
+              <span class="tag">Sauvegarde</span>
+              <span class="tag">Monitoring</span>
+              <span class="tag">Documentation</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ═══════════════════════════════════
+         PROJETS
+    ═══════════════════════════════════ -->
+    <section id="projects" aria-label="Projets">
+      <div class="container">
+        <div class="eyebrow">Réalisations</div>
+        <h2 class="title">Mes <em>projets</em></h2>
+        <p class="lead">Des projets menés de bout en bout — conception, déploiement, sécurisation et documentation technique. Les rapports sont disponibles en téléchargement.</p>
+
+        <!-- Filtres -->
+        <div class="filter-bar" role="group" aria-label="Filtrer les projets">
+          <button class="f-btn active" data-filter="all">Tous</button>
+          <button class="f-btn" data-filter="réseau">Réseau</button>
+          <button class="f-btn" data-filter="sécu">Sécurité</button>
+          <button class="f-btn" data-filter="pentest">Pentest</button>
+          <button class="f-btn" data-filter="sae">SAE</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- ── Projet 1 : JurisNova ── -->
+          <div class="proj-card fade-up" data-cat="réseau sécu">
+            <div class="proj-top">
+              <div class="proj-badges">
+                <span class="bt bt-blue">Réseau</span>
+                <span class="bt bt-teal">Sécurité</span>
+              </div>
+              <div class="proj-emoji">🏛️</div>
+            </div>
+            <div class="proj-body">
+              <h3>Infrastructure Sécurisée – Cabinet JurisNova</h3>
+              <p class="proj-ctx">Conception et déploiement complet pour un cabinet juridique fictif</p>
+              <p class="proj-desc">
+                Architecture réseau segmentée en 4 zones distinctes : LAN interne, DMZ Web, DMZ base de données, Wi-Fi invité. Déploiement pfSense avec règles ACL strictes, serveur DHCP centralisé, hébergement GLPI pour la gestion du parc informatique, et supervision réseau en temps réel.
+              </p>
+              <div class="proj-stack">
+                <span class="stack-pill">pfSense</span>
+                <span class="stack-pill">VLAN</span>
+                <span class="stack-pill">DMZ</span>
+                <span class="stack-pill">DHCP</span>
+                <span class="stack-pill">GLPI</span>
+                <span class="stack-pill">GNS3</span>
+                <span class="stack-pill">ACL</span>
+              </div>
+              <div class="proj-result">
+                <strong>Résultat —</strong> Infrastructure opérationnelle, isolation totale des flux sensibles, zéro incident lors des tests de pénétration internes.
+              </div>
+
+              <!-- Fichiers à télécharger -->
+              <div class="proj-docs">
+                <div class="proj-docs-title"><i class="fa fa-paperclip" style="margin-right:0.4rem"></i>Documents</div>
+                <a href="assets/docs/rapport-jurisnova.pdf"
+                   class="doc-link"
+                   target="_blank"
+                   >
+                  <i class="fa fa-file-pdf"></i>
+                  <span class="doc-label">Rapport technique – JurisNova</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+                <a href="assets/docs/schema-reseau-jurisnova.pdf"
+                   class="doc-link"
+                   target="_blank">
+                  <i class="fa fa-diagram-project"></i>
+                  <span class="doc-label">Schéma réseau & adressage</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Projet 2 : Lab Cyberattaque ── -->
+          <div class="proj-card fade-up" data-cat="sécu pentest">
+            <div class="proj-top">
+              <div class="proj-badges">
+                <span class="bt bt-teal">Sécurité</span>
+                <span class="bt bt-amber">Pentest</span>
+              </div>
+              <div class="proj-emoji">⚔️</div>
+            </div>
+            <div class="proj-body">
+              <h3>Lab Cyberattaque – Simulation Attaque / Défense</h3>
+              <p class="proj-ctx">Environnement virtualisé dual machine pour scénarios offensifs et défensifs</p>
+              <p class="proj-desc">
+                Création d'un lab dual avec machine attaquante (Kali Linux) et machine cible (Debian). Attaque complète en 3 phases : reconnaissance (nmap, OSINT), exploitation de CVE, élévation de privilèges. Phase défensive : analyse des logs Wireshark, détection d'IOC, correction des failles, renforcement pare-feu.
+              </p>
+              <div class="proj-stack">
+                <span class="stack-pill">Kali Linux</span>
+                <span class="stack-pill">nmap</span>
+                <span class="stack-pill">Wireshark</span>
+                <span class="stack-pill">Metasploit</span>
+                <span class="stack-pill">iptables</span>
+                <span class="stack-pill">VirtualBox</span>
+              </div>
+              <div class="proj-result">
+                <strong>Résultat —</strong> 3 vecteurs d'attaque identifiés et corrigés, rapport d'audit complet rédigé avec recommandations priorisées.
+              </div>
+
+              <div class="proj-docs">
+                <div class="proj-docs-title"><i class="fa fa-paperclip" style="margin-right:0.4rem"></i>Documents</div>
+                <a href="assets/docs/rapport-cyberattaque.pdf" class="doc-link" target="_blank">
+                  <i class="fa fa-file-pdf"></i>
+                  <span class="doc-label">Rapport d'audit – Lab Cyberattaque</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Projet 3 : Réseau entreprise ── -->
+          <div class="proj-card fade-up" data-cat="réseau sécu">
+            <div class="proj-top">
+              <div class="proj-badges">
+                <span class="bt bt-blue">Réseau</span>
+                <span class="bt bt-teal">Sécurité</span>
+              </div>
+              <div class="proj-emoji">🏢</div>
+            </div>
+            <div class="proj-body">
+              <h3>Réseau Multi-Sites Sécurisé – Entreprise</h3>
+              <p class="proj-ctx">Déploiement complet d'un réseau d'entreprise avec authentification 802.1X</p>
+              <p class="proj-desc">
+                VLAN par département, routage dynamique RIP inter-sites, serveurs DHCP/DNS redondants, DMZ applicative. Sécurisation avancée : iptables, DHCP snooping pour prévenir les attaques ARP spoofing, authentification 802.1X via serveur RADIUS centralisé.
+              </p>
+              <div class="proj-stack">
+                <span class="stack-pill">VLAN</span>
+                <span class="stack-pill">RIP</span>
+                <span class="stack-pill">RADIUS</span>
+                <span class="stack-pill">DHCP Snooping</span>
+                <span class="stack-pill">iptables</span>
+                <span class="stack-pill">ACL</span>
+              </div>
+              <div class="proj-result">
+                <strong>Résultat —</strong> Réseau opérationnel, authentification centralisée fonctionnelle, résistance aux attaques ARP Spoofing démontrée.
+              </div>
+
+              <div class="proj-docs">
+                <div class="proj-docs-title"><i class="fa fa-paperclip" style="margin-right:0.4rem"></i>Documents</div>
+                <a href="assets/docs/rapport-reseau-entreprise.pdf" class="doc-link" target="_blank">
+                  <i class="fa fa-file-pdf"></i>
+                  <span class="doc-label">Rapport technique – Réseau entreprise</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Projet 4 : Pentest CTF ── -->
+          <div class="proj-card fade-up" data-cat="pentest">
+            <div class="proj-top">
+              <div class="proj-badges">
+                <span class="bt bt-amber">Pentest</span>
+              </div>
+              <div class="proj-emoji">🔍</div>
+            </div>
+            <div class="proj-body">
+              <h3>Méthodologie Pentest – Challenges CTF</h3>
+              <p class="proj-ctx">Pratique continue sur plateformes spécialisées</p>
+              <p class="proj-desc">
+                Application méthodique de la méthodologie PTES complète : reconnaissance passive/active (OSINT, nmap), scanning de vulnérabilités, exploitation (CVE, injections web/SQL), post-exploitation et persistance. Challenges progressifs web, réseau, cryptographie, forensic.
+              </p>
+              <div class="proj-stack">
+                <span class="stack-pill">TryHackMe</span>
+                <span class="stack-pill">RootMe</span>
+                <span class="stack-pill">nmap</span>
+                <span class="stack-pill">Burp Suite</span>
+                <span class="stack-pill">Metasploit</span>
+                <span class="stack-pill">OSINT</span>
+              </div>
+              <div class="proj-result">
+                <strong>Résultat —</strong> Maîtrise de la méthodologie PTES, résolution de challenges classifiés Medium à Hard, progression mesurable et continue.
+              </div>
+
+              <div class="proj-docs">
+                <div class="proj-docs-title"><i class="fa fa-paperclip" style="margin-right:0.4rem"></i>Documents</div>
+                <a href="assets/docs/write-up-pentest.pdf" class="doc-link" target="_blank">
+                  <i class="fa fa-file-pdf"></i>
+                  <span class="doc-label">Write-up – Challenges CTF sélectionnés</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SAE S2 : Construction réseau ── -->
+          <div class="proj-card fade-up" data-cat="sae réseau">
+            <div class="proj-top">
+              <div class="proj-badges">
+                <span class="bt bt-slate">SAE S2</span>
+                <span class="bt bt-blue">Réseau</span>
+              </div>
+              <div class="proj-emoji">📡</div>
+            </div>
+            <div class="proj-body">
+              <h3>Construction d'un Réseau Informatique</h3>
+              <p class="proj-ctx">SAE Semestre 2 — Projet intégratif en équipe</p>
+              <p class="proj-desc">
+                Conception du plan d'adressage IP, câblage physique, configuration de switchs et routeurs, déploiement des services DHCP et DNS, mise en place d'une solution logicielle, tests de connectivité et validation complète en équipe de 4.
+              </p>
+              <div class="proj-stack">
+                <span class="stack-pill">Marionnet</span>
+                <span class="stack-pill">DHCP</span>
+                <span class="stack-pill">DNS</span>
+                <span class="stack-pill">Routage</span>
+                <span class="stack-pill">Switching</span>
+              </div>
+              <div class="proj-result">
+                <strong>Résultat —</strong> Réseau conforme aux spécifications, rapport technique livré, projet validé en équipe.
+              </div>
+
+              <div class="proj-docs">
+                <div class="proj-docs-title"><i class="fa fa-paperclip" style="margin-right:0.4rem"></i>Documents</div>
+                <a href="assets/docs/sae-s2-reseau.pdf" class="doc-link" target="_blank">
+                  <i class="fa fa-file-pdf"></i>
+                  <span class="doc-label">Rapport SAE S2 – Construction réseau</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SAE S4 : Sécurisation SI ── -->
+          <div class="proj-card fade-up" data-cat="sae sécu">
+            <div class="proj-top">
+              <div class="proj-badges">
+                <span class="bt bt-slate">SAE S4</span>
+                <span class="bt bt-teal">Sécurité</span>
+              </div>
+              <div class="proj-emoji">🔐</div>
+            </div>
+            <div class="proj-body">
+              <h3>Sécurisation d'un Système d'Information</h3>
+              <p class="proj-ctx">SAE Semestre 4 — Audit et sécurisation SI complet</p>
+              <p class="proj-desc">
+                Audit de sécurité complet, cartographie des actifs et analyse de risques, définition d'une politique de sécurité, déploiement des mesures correctives (firewall, segmentation réseau, chiffrement), rédaction d'un livrable professionnel.
+              </p>
+              <div class="proj-stack">
+                <span class="stack-pill">Audit SI</span>
+                <span class="stack-pill">Politique sécurité</span>
+                <span class="stack-pill">Firewall</span>
+                <span class="stack-pill">VLAN</span>
+                <span class="stack-pill">Chiffrement</span>
+              </div>
+              <div class="proj-result">
+                <strong>Résultat —</strong> Plan de sécurisation complet, surface d'attaque réduite, rapport et présentation professionnels livrés.
+              </div>
+
+              <div class="proj-docs">
+                <div class="proj-docs-title"><i class="fa fa-paperclip" style="margin-right:0.4rem"></i>Documents</div>
+                <a href="assets/docs/sae-s4-securisation.pdf" class="doc-link" target="_blank">
+                  <i class="fa fa-file-pdf"></i>
+                  <span class="doc-label">Rapport SAE S4 – Sécurisation SI</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+                <a href="assets/docs/sae-s4-presentation.pdf" class="doc-link" target="_blank">
+                  <i class="fa fa-file-powerpoint"></i>
+                  <span class="doc-label">Présentation SAE S4</span>
+                  <span class="doc-size">PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         STAGE (fond sombre)
+    ═══════════════════════════════════ -->
+    <section id="stage" aria-label="Stage">
+      <div class="container">
+        <div class="eyebrow">Expérience professionnelle</div>
+        <h2 class="title">Stage <em>en cours</em></h2>
+        <p class="lead">Une immersion professionnelle dans un laboratoire de recherche reconnu de l'Université Sorbonne Paris Nord, sur des problématiques de cybersécurité avancée.</p>
+
+        <div class="stage-wrapper fade-up">
+
+          <!-- ── Carte entreprise ── -->
+          <div class="stage-company-card">
+            <div>
+              <div class="stage-company-name">Institut Galilée – LIPN</div>
+              <div class="stage-company-sub">
+                <i class="fa fa-building"></i>
+                Laboratoire d'Informatique de Paris-Nord · Université Sorbonne Paris Nord
+              </div>
+              <p class="stage-company-desc">
+                Le LIPN (UMR CNRS 7030) est un laboratoire de recherche en informatique fondamentale et appliquée, hébergé au sein de l'Institut Galilée à Villetaneuse. Il regroupe des chercheurs travaillant sur des domaines variés incluant les systèmes distribués, la sécurité informatique, et l'intelligence artificielle. Le stage s'inscrit dans l'administration et la sécurisation de l'infrastructure réseau et système du laboratoire.
+              </p>
+
+              <!-- Facts clés -->
+              <div class="stage-company-facts">
+                <div class="fact-item">
+                  <i class="fa fa-location-dot"></i>
+                  <span><strong>Villetaneuse</strong>, Seine-Saint-Denis (93)</span>
+                </div>
+                <div class="fact-item">
+                  <i class="fa fa-user-tie"></i>
+                  <span>Tuteur : <strong>Arnaud Lefevre</strong></span>
+                </div>
+                <div class="fact-item">
+                  <i class="fa fa-calendar-alt"></i>
+                  <span><strong>20 avril → 26 juin 2026</strong> (10 semaines)</span>
+                </div>
+                <div class="fact-item">
+                  <i class="fa fa-graduation-cap"></i>
+                  <span>Stage BUT R&T <strong>Semestre 4</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Méta droite -->
+            <div class="stage-company-meta">
+              <div class="status-live">
+                <span class="live-dot"></span>
+                En cours
+              </div>
+              <div class="stage-meta-item">Durée : <span>10 semaines</span></div>
+              <div class="stage-meta-item">Type : <span>Stage obligatoire</span></div>
+              <div class="stage-meta-item">Domaine : <span>Cybersécurité & Réseaux</span></div>
+            </div>
+          </div>
+
+          <!-- ── Missions + Compétences ── -->
+          <div class="stage-main-grid">
+
+            <!-- Missions détaillées -->
+            <div class="stage-card">
+              <div class="stage-section-title">Missions détaillées</div>
+
+              <div class="mission-row">
+                <div class="mission-num">01</div>
+                <div class="mission-content">
+                  <strong>Centralisation des logs – Graylog</strong>
+                  <span>
+                    Déploiement et configuration complète d'un serveur Graylog (SIEM open source) pour la centralisation, l'indexation et l'analyse des journaux système de l'ensemble du parc réseau. Mise en place de tableaux de bord d'alerting et de règles de corrélation d'événements.
+                  </span>
+                  <div class="mission-tools">
+                    <span class="mission-tool">Graylog</span>
+                    <span class="mission-tool">Elasticsearch</span>
+                    <span class="mission-tool">Syslog</span>
+                    <span class="mission-tool">MongoDB</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mission-row">
+                <div class="mission-num">02</div>
+                <div class="mission-content">
+                  <strong>pfSense en Haute Disponibilité</strong>
+                  <span>
+                    Configuration d'un cluster pfSense en mode HA avec protocole CARP (Common Address Redundancy Protocol) pour éliminer le SPOF (Single Point of Failure). Synchronisation des états de connexion et des règles firewall entre les deux nœuds actif/passif.
+                  </span>
+                  <div class="mission-tools">
+                    <span class="mission-tool">pfSense</span>
+                    <span class="mission-tool">CARP</span>
+                    <span class="mission-tool">pfsync</span>
+                    <span class="mission-tool">XMLRPC Sync</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mission-row">
+                <div class="mission-num">03</div>
+                <div class="mission-content">
+                  <strong>Mise à jour serveur RADIUS</strong>
+                  <span>
+                    Migration et sécurisation du serveur FreeRADIUS (authentification 802.1X). Révision des politiques d'accès réseau, mise à jour des certificats, tests de conformité et documentation des nouveaux process d'authentification.
+                  </span>
+                  <div class="mission-tools">
+                    <span class="mission-tool">FreeRADIUS</span>
+                    <span class="mission-tool">EAP-TLS</span>
+                    <span class="mission-tool">LDAP</span>
+                    <span class="mission-tool">802.1X</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mission-row">
+                <div class="mission-num">04</div>
+                <div class="mission-content">
+                  <strong>Pentests internes</strong>
+                  <span>
+                    Conduite d'audits de vulnérabilités sur le périmètre interne du laboratoire. Utilisation d'une méthodologie structurée (reconnaissance, scan, exploitation, rapport). Rédaction de rapports de pentest avec recommandations priorisées par criticité et plans de remédiation.
+                  </span>
+                  <div class="mission-tools">
+                    <span class="mission-tool">nmap</span>
+                    <span class="mission-tool">Nessus</span>
+                    <span class="mission-tool">Metasploit</span>
+                    <span class="mission-tool">Wireshark</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Compétences + Documents stage -->
+            <div style="display:flex;flex-direction:column;gap:1.5rem;">
+
+              <div class="stage-card">
+                <div class="stage-section-title">Compétences développées</div>
+                <div class="comp-grid">
+                  <span class="comp-tag">VLAN & Routage</span>
+                  <span class="comp-tag">Firewall avancé</span>
+                  <span class="comp-tag">Linux Server</span>
+                  <span class="comp-tag">Proxmox</span>
+                  <span class="comp-tag">Virtualisation</span>
+                  <span class="comp-tag">Graylog / SIEM</span>
+                  <span class="comp-tag">pfSense HA</span>
+                  <span class="comp-tag">FreeRADIUS</span>
+                  <span class="comp-tag">802.1X / EAP</span>
+                  <span class="comp-tag">Pentest</span>
+                  <span class="comp-tag">Audit SI</span>
+                  <span class="comp-tag">Documentation</span>
+                  <span class="comp-tag">Bonnes pratiques</span>
+                  <span class="comp-tag">Analyse de logs</span>
+                </div>
+              </div>
+
+              <div class="stage-card">
+                <div class="stage-section-title">Documents du stage</div>
+                <div class="stage-docs-grid">
+                  <a href="assets/docs/rapport-stage-lipn.pdf"
+                     class="stage-doc-link"
+                     target="_blank"
+                     >
+                    <i class="fa fa-file-pdf"></i>
+                    <span>Rapport de stage complet</span>
+                    <span class="doc-size">PDF</span>
+                  </a>
+                  <a href="assets/docs/rapport-pentest-interne.pdf"
+                     class="stage-doc-link"
+                     target="_blank"
+                     >
+                    <i class="fa fa-file-pdf"></i>
+                    <span>Rapport de pentest interne</span>
+                    <span class="doc-size">PDF</span>
+                  </a>
+                  <a href="assets/docs/livret-stage.pdf"
+                     class="stage-doc-link"
+                     target="_blank"
+                     >
+                    <i class="fa fa-file-lines"></i>
+                    <span>Livret de suivi de stage</span>
+                    <span class="doc-size">PDF</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ═══════════════════════════════════
+         PARCOURS (Formation + Expériences)
+    ═══════════════════════════════════ -->
+    <section id="formation" aria-label="Formation et expériences">
+      <div class="container">
+        <div class="eyebrow">Parcours</div>
+        <h2 class="title">Formation & <em>expériences</em></h2>
+
+        <div class="parcours-grid fade-up">
+
+          <!-- Formation -->
+          <div>
+            <div class="parcours-title">🎓 Formation</div>
+            <div class="tl">
+
+              <div class="tl-item">
+                <div class="tl-date">2023 → Aujourd'hui</div>
+                <div class="tl-title">BUT Réseaux & Télécommunications</div>
+                <div class="tl-org">
+                  IUT de Villetaneuse – Université Sorbonne Paris Nord<br>
+                  Parcours Cybersécurité · <strong>Délégué de département</strong>
+                </div>
+                <div class="tl-desc">
+                  Formation technique de 3 ans couvrant les réseaux, systèmes, cybersécurité et télécommunications. Projets SAE progressifs en conditions réelles (S1 à S4). Élu délégué de promotion, représentant les étudiants auprès de l'équipe pédagogique.
+                </div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-date">2020 → 2023</div>
+                <div class="tl-title">Baccalauréat Général — Mention</div>
+                <div class="tl-org">Spécialités Mathématiques & Physique-Chimie</div>
+                <div class="tl-desc">
+                  Parcours scientifique rigoureux avec mention. Certification PIX obtenue. Bases solides en logique formelle et résolution de problèmes, directement transposables aux réseaux et à l'algorithmie.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Expériences -->
+          <div>
+            <div class="parcours-title">💼 Expériences</div>
+            <div class="tl">
+
+              <div class="tl-item">
+                <div class="tl-date">Avril – Juin 2026</div>
+                <div class="tl-title">Stagiaire Cybersécurité & Réseaux</div>
+                <div class="tl-org">Institut Galilée – LIPN, Villetaneuse</div>
+                <div class="tl-desc">
+                  Graylog, pfSense HA, RADIUS, pentests internes.
+                  <a href="#stage">Voir le détail complet →</a>
+                </div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-date">2020</div>
+                <div class="tl-title">Technicien Réseau Junior — Stage</div>
+                <div class="tl-org">Médiathèque d'Argenteuil</div>
+                <div class="tl-desc">
+                  <ul>
+                    <li>Installation et configuration du parc informatique (postes, imprimantes, périphériques réseau)</li>
+                    <li>Support utilisateurs niveau 1 & 2 (diagnostic, résolution de pannes)</li>
+                    <li>Découverte des infrastructures réseau en environnement professionnel réel</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-date">2025</div>
+                <div class="tl-title">Assistant Technicien — Job étudiant</div>
+                <div class="tl-org">Rapid'Chauff, Argenteuil</div>
+                <div class="tl-desc">
+                  <ul>
+                    <li>Interventions de dépannage et installation technique sur le terrain</li>
+                    <li>Relation client directe, gestion des priorités d'intervention</li>
+                    <li>Travail en binôme, sens du service et rigueur d'exécution</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════ -->
+    <section id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="eyebrow">Restons en contact</div>
+        <h2 class="title">Travaillons <em>ensemble</em></h2>
+
+        <div class="contact-layout fade-up">
+
+          <div class="contact-left">
+            <h3>Disponible pour<br>alternance & stage</h3>
+            <p>
+              Je suis activement à la recherche d'opportunités en cybersécurité et administration réseau. N'hésitez pas à me contacter pour discuter de vos besoins, obtenir mon CV complet, ou simplement échanger sur un projet.
+            </p>
+
+            <div class="c-links">
+              <a href="mailto:abdelkrim.messaoudene09@gmail.com" class="c-link">
+                <i class="fa fa-envelope"></i>
+                abdelkrim.messaoudene09@gmail.com
+              </a>
+              <a href="tel:+33666336642" class="c-link">
+                <i class="fa fa-phone"></i>
+                +33 6 66 33 66 42
+              </a>
+              <a href="https://www.linkedin.com/in/abdelkrim-messaoudene"
+                 target="_blank" rel="noopener"
+                 class="c-link">
+                <i class="fab fa-linkedin"></i>
+                linkedin.com/in/abdelkrim-messaoudene
+              </a>
+              <a href="https://github.com/krimm-cyber"
+                 target="_blank" rel="noopener"
+                 class="c-link">
+                <i class="fab fa-github"></i>
+                github.com/krimm-cyber
+              </a>
+              <!-- CV -->
+              <a href="assets/docs/CV-Abdelkrim-Messaoudene.pdf"
+                 target="_blank"
+                 class="c-link"
+                 >
+                <i class="fa fa-file-pdf"></i>
+                Télécharger mon CV (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulaire -->
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/maqvvdzv" method="POST">
+            <h4>Envoyer un message</h4>
+
+            <div class="field">
+              <label for="name">Votre nom</label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="contact@entreprise.fr" required />
+            </div>
+
+            <div class="field">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" placeholder="Proposition d'alternance, collaboration…" />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin…"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="align-self: flex-start;">
+              <i class="fa fa-paper-plane fa-xs"></i> Envoyer
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer>
+    <p>© 2026 <a href="#hero">Abdelkrim Messaoudene</a> — Réseaux & Cybersécurité · BUT R&T · IUT de Villetaneuse</p>
+    <div class="footer-links">
+      <a href="mailto:abdelkrim.messaoudene09@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/abdelkrim-messaoudene" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/krimm-cyber" target="_blank" rel="noopener">GitHub</a>
+      <a href="assets/docs/CV-Abdelkrim-Messaoudene.pdf" target="_blank">CV PDF</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
