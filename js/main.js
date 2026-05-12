@@ -104,26 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ──────────────────────────────────────
+ /* ──────────────────────────────────────
      6. CONTACT FORM — Feedback envoi
   ────────────────────────────────────── */
   const contactForm = document.getElementById('contactForm');
-
-  contactForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn  = contactForm.querySelector('[type=submit]');
-    const orig = btn.innerHTML;
-
-    btn.innerHTML          = '<i class="fa fa-check fa-xs"></i> Message envoyé !';
-    btn.style.background   = 'var(--teal)';
-    btn.disabled           = true;
-
-    setTimeout(() => {
-      btn.innerHTML        = orig;
-      btn.style.background = '';
-      btn.disabled         = false;
-      contactForm.reset();
-    }, 3500);
+  contactForm?.addEventListener('submit', () => {
+    const btn = contactForm.querySelector('[type=submit]');
+    btn.innerHTML = '<i class="fa fa-check fa-xs"></i> Envoi en cours...';
+    btn.disabled = true;
   });
 
 
